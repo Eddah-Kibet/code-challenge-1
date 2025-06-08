@@ -1,6 +1,6 @@
-const bodaFare = 50
-let bodaFarePerKm = 15
-let distanceInKm;
+const bodaFare = 50//a constant boda fare
+let bodaFarePerKm = 15//boda fare per kilometer
+let distanceInKm = 2//any distance
 let totalFare = bodaFare + (distanceInKm * bodaFarePerKm);
 
 function calculateBodaFare(distanceInKm) {
@@ -28,8 +28,6 @@ function calculateDistance(totalFare) {
         return "Please enter a whole number for fare.";
     } else if (totalFare < bodaFare) {
         return "The fare must be at least the boda fare of " + bodaFare + ".";
-    }
-
-    let distance = (totalFare - bodaFare) / bodaFarePerKm;
-    return "You can travel " + distance + " km with a fare of " + totalFare + ".";
+    }else(totalFare > 0;
+        return "You can travel " + distance + " km with a fare of " + totalFare + ".";
 }
