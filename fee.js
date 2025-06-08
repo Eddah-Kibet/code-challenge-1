@@ -1,15 +1,19 @@
-let transactionAmount = 2000000
+let amountToSend = prompt; //prompts the user to enter an amount
+let amount to send = number//amount to send
 let transactionFee = 1.5% transactionAmount; //1.5% fee
-let minimumTransactionFee = 10
-let maximumTransactionFee = 70
 
-if (transactionFee <=10){
-  transactionAmount = 10;
-}
-
-if (transactionFee >= 70){
+const totalAmountToBeDebted =transactionAmount+ transactionFee
+let totalAmountToBeDebited(transactionFee){
+  if (transactionFee === 10){
+    transactionFee = 10;
+  }else if(transactionFee <10){
+    transactionFee = 10
+  }
+  if (transactionFee === 70){
     transactionAmount = 70; 
-}
+  }elsee if (transactionFee >70){
+    transactionFee = 70
+  }
 
 function estimateTransactionFee(amount) {
     if (transactionAmount < 0) {
@@ -24,12 +28,5 @@ function estimateTransactionFee(amount) {
     }
     else (transactionAmount > 0) 
         return "The estimated transaction fee for " + amount + " is: " + (amount * (transactionFee / 100))
-    }
-
-    
-let fee = transactionAmount * (transactionFee / 100);
-let totalAmountToBeDebted = transactionAmount + transactionFee
-    if (totalAmountToBeDebted >= 0){
-    return "The total amount to be debited is: " + totalAmountToBeDebted;
     }
 
